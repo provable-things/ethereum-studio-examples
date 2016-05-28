@@ -17,6 +17,7 @@ contract KrakenPriceTicker is usingOraclize {
 
     function KrakenPriceTicker() {
         owner = msg.sender;
+        oraclize_setNetwork(networkID_consensys);
         oraclize_setProof(proofType_TLSNotary | proofStorage_IPFS);
         update(0);
     }
