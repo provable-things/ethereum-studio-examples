@@ -7,7 +7,7 @@
    WARNING: ensure the contract has enough ethers in its balance or the __callback tx will throw
 */
 
-import "dev.oraclize.it/api.sol";
+import "oraclizeAPI.sol";
 
 contract KrakenPriceTicker is usingOraclize {
     
